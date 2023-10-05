@@ -16,12 +16,23 @@ myArray.unshift(9)//adds given value at first
 myArray.shift()// remove the elemtent from the first
 
 //slice , splice
-console.log("A", myArray);
+// console.log("A", myArray);
 
 const myn1 = myArray.slice(1,3)// slice does't manipulate the ehole array it just slice the given part aof array an print it 
-console.log(myn1);
-console.log(myArray);
+// console.log(myn1);
+// console.log(myArray);
 
 const myn2 = myArray.splice(1,3) //splice manipulate the whole array
-console.log("B", myn2);
-console.log(myArray);
+// console.log("B", myn2);
+// console.log(myArray);
+
+const fruits1 = ["apple", "mango", "orange"]
+const fruits2 =["grapes", "litchi", "banana"]
+
+// const allfruits = fruits1.concat(fruits2);
+// console.log(allfruits);
+
+const all_fruits = [...fruits1, ...fruits2] //spread is used to merge two arrays, we can add more than 2 arrays
+console.log(all_fruits);
+
+
